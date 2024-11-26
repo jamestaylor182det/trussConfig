@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<truss>
+<basicSettings>
+  <canvasWidth>720</canvasWidth>
+  <canvasHeight>450</canvasHeight>
+
+  <trussXOffset>70</trussXOffset>
+  <trussYOffset>150</trussYOffset>
+
+  <sliderMaxVal>500</sliderMaxVal>
+  <sliderInterval>5</sliderInterval>
+
+  <labelFontSize>14</labelFontSize>
+  <loadFontSize>14</loadFontSize>
+  <reationFontSize>14</reationFontSize>
+  <forceLabelFontSize>20</forceLabelFontSize>
+  <memberFontSize>12</memberFontSize>
+
+  <errorBoxX>30</errorBoxX>
+  <errorBoxY>140</errorBoxY>
+  <errorSpace>4</errorSpace>  
+  <errorTextSize>18</errorTextSize>
+
+  <jointPointDiam>5</jointPointDiam>    
+  
+</basicSettings>
+<joints>
+    <joint name="A" x="0" y ="0" />
+    <joint name="B" x="300" y ="0" />
+    <joint name="C" x="300" y ="200" />
+</joints>
+
+<labelOffsets>
+    <offset name="A" x="-20" y ="-20" />
+    <offset name="B" x="-20" y ="10" />
+    <offset name="C" x="10" y ="-20" />
+</labelOffsets>
+
+<members>
+    <member name="AB" Joint1="A" Joint2="B"/>
+    <member name="AC" Joint1="A" Joint2="C"/>
+    <member name="BC" Joint1="B" Joint2="C"/>
+</members>
+
+<loads>
+    <load name="A" mag="0" ang="0" textXOff="0" textYOff="0"/>
+    <load name="B" mag="1000" ang="0" textXOff="0" textYOff="-90"/>
+    <load name="C" mag="0" ang="0" textXOff="0" textYOff="70"/>
+</loads>
+
+<reactions>
+    <reaction name="A_y" value="1" textXOff="10" textYOff="-10" align="rightAbove"/>
+    <reaction name="C_x" value="1" textXOff="-30" textYOff="60" align="leftBelow"/>
+    <reaction name="C_y" value="1" textXOff="-30" textYOff="60" align="leftBelow"/>
+</reactions>
+</truss>
