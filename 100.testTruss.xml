@@ -25,9 +25,9 @@
   
 </basicSettings>
 <joints>
-    <joint name="A" x="0" y ="0" />
-    <joint name="B" x="300" y ="0" />
-    <joint name="C" x="300" y ="200" />
+    <joint name="A" x="0" y ="0"> </joint>
+    <joint name="B" x="300" y ="0"> </joint>
+    <joint name="C" x="300" y ="200"> </joint>
 </joints>
 
 <labelOffsets>
