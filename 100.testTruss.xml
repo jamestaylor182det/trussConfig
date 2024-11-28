@@ -50,7 +50,7 @@
 
 <reactions>
     <reaction name="A_y" value="1" textXOff="10" textYOff="-10" align="rightAbove"/>
-    <reaction name="C_x" value="1" textXOff="-30" textYOff="60" align="leftBelow"/>
-    <reaction name="C_y" value="1" textXOff="-30" textYOff="60" align="leftBelow"/>
+    <reaction name="B_x" value="1" textXOff="-30" textYOff="60" align="leftBelow"/>
+    <reaction name="B_y" value="1" textXOff="-30" textYOff="60" align="leftBelow"/>
 </reactions>
 </truss>
