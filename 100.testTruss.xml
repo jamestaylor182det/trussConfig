@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <truss>
 <basicSettings>
-  <canvasWidth>420</canvasWidth>
+  <canvasWidth>500</canvasWidth>
   <canvasHeight>450</canvasHeight>
 
   <trussXOffset>70</trussXOffset>
