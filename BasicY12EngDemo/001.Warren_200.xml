@@ -74,8 +74,8 @@
     <load name="E" mag="0" ang="0" textXOff="0" textYOff="-110"/>
     <load name="F" mag="0" ang="0" textXOff="0" textYOff="80"/>
     <load name="G" mag="0" ang="0" textXOff="0" textYOff="80"/>
-    <load name="H" mag="0" ang="0" textXOff="0" textYOff="80"/>
-    <load name="J" mag="0" ang="0" textXOff="0" textYOff="80"/>
+    <load name="H" mag="100" ang="270" textXOff="0" textYOff="80"/>
+    <load name="J" mag="100" ang="270" textXOff="0" textYOff="80"/>
 </loads>
 
 <reactions>
