@@ -52,7 +52,7 @@
     <member name="AB" Joint1="A" Joint2="B"/>
     <member name="AJ" Joint1="A" Joint2="J"/>
     <member name="BC" Joint1="B" Joint2="C"/>
-    <member name="BJ" Joint1="B" Joint2="C"/>
+    <member name="BJ" Joint1="B" Joint2="J"/>
     <member name="CD" Joint1="C" Joint2="D"/>
     <member name="CH" Joint1="C" Joint2="H"/>
     <member name="DH" Joint1="H" Joint2="D"/>
