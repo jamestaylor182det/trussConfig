@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<truss>
+<basicSettings>
+  <canvasWidth>720</canvasWidth>
+  <canvasHeight>450</canvasHeight>
+
+  <trussXOffset>70</trussXOffset>
+  <trussYOffset>150</trussYOffset>
+
+  <sliderMaxVal>500</sliderMaxVal>
+  <sliderInterval>5</sliderInterval>
+
+  <labelFontSize>14</labelFontSize>
+  <loadFontSize>14</loadFontSize>
+  <reationFontSize>14</reationFontSize>
+  <forceLabelFontSize>20</forceLabelFontSize>
+  <memberFontSize>10</memberFontSize>
+
+  <errorBoxX>30</errorBoxX>
+  <errorBoxY>140</errorBoxY>
+  <errorSpace>4</errorSpace>  
+  <errorTextSize>18</errorTextSize>
+
+  <jointPointDiam>5</jointPointDiam>    
+  
+</basicSettings>
+<joints>
+    <joint name="A" x="0" y ="0"/>
+    <joint name="B" x="150" y ="150"/>
+    <joint name="C" x="300" y ="150"/>
+    <joint name="D" x="450" y ="150"/>
+    <joint name="E" x="600" y ="0"/>
+    <joint name="F" x="450" y ="0"/>
+    <joint name="G" x="300" y ="0"/>
+    <joint name="H" x="150" y ="0"/>
+    <joint name="J" x="150" y ="75"/>
+    <joint name="K" x="450" y ="75"/>
+</joints>
+
+<labelOffsets>
+    <offset name="A" x="-20" y ="-20" />
+    <offset name="B" x="-20" y ="10" />
+    <offset name="C" x="-20" y ="10" />
+    <offset name="D" x="-20" y ="10" />
+    <offset name="E" x="-20" y ="-20" />
+    <offset name="F" x="-20" y ="-20" />
+    <offset name="G" x="-20" y ="-20" />
+    <offset name="H" x="-20" y ="-20" />
+    <offset name="J" x="-20" y ="-5" />
+    <offset name="K" x="10" y ="-5" />
+</labelOffsets>
+
+<members>
+    <member name="AB" Joint1="A" Joint2="B"/>
+    <member name="AH" Joint1="A" Joint2="H"/>
+    <member name="BC" Joint1="B" Joint2="C"/>
+    <member name="BJ" Joint1="J" Joint2="B"/>
+    <member name="CD" Joint1="C" Joint2="D"/>
+    <member name="CG" Joint1="G" Joint2="C"/>
+    <member name="HG" Joint1="H" Joint2="G"/>
+    <member name="CJ" Joint1="J" Joint2="C"/>
+    <member name="DE" Joint1="D" Joint2="E"/>
+    <member name="EF" Joint1="F" Joint2="E"/>
+    <member name="GF" Joint1="G" Joint2="F"/>
+    <member name="CK" Joint1="C" Joint2="K"/>
+    <member name="DK" Joint1="K" Joint2="D"/>
+    <member name="JG" Joint1="J" Joint2="G"/>
+    <member name="KG" Joint1="G" Joint2="K"/>
+    <member name="JH" Joint1="H" Joint2="J"/>
+    <member name="KF" Joint1="F" Joint2="K"/>
+</members>
+
+<loads>
+    <load name="A" mag="0" ang="0" textXOff="0" textYOff="80"/>
+    <load name="B" mag="0" ang="0" textXOff="0" textYOff="-110"/>
+    <load name="C" mag="0" ang="0" textXOff="0" textYOff="-110"/>
+    <load name="D" mag="0" ang="0" textXOff="0" textYOff="-110"/>
+    <load name="E" mag="0" ang="0" textXOff="0" textYOff="80"/>
+    <load name="F" mag="0" ang="0" textXOff="0" textYOff="80"/>
+    <load name="G" mag="100" ang="270" textXOff="0" textYOff="80"/>
+    <load name="H" mag="100" ang="270" textXOff="0" textYOff="80"/>
+    <load name="J" mag="0" ang="0" textXOff="-130" textYOff="-80"/>
+    <load name="K" mag="0" ang="0" textXOff="130" textYOff="-80"/>
+</loads>
+
+<reactions>
+    <reaction name="A_x" value="1" textXOff="-60" textYOff="-10" align="leftBelow"/>
+    <reaction name="A_y" value="1" textXOff="-30" textYOff="60" align="leftBelow"/>
+    <reaction name="E_y" value="1" textXOff="-30" textYOff="60" align="leftBelow"/>
+</reactions>
+</truss>
