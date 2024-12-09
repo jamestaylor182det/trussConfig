@@ -25,26 +25,39 @@
   
 </basicSettings>
 <joints>
-    <joint name="A" x="0" y ="0"/>
-    <joint name="B" x="150" y ="150"/>
-    <joint name="C" x="300" y ="150"/>
-    <joint name="D" x="450" y ="150"/>
-    <joint name="E" x="600" y ="0"/>
-    <joint name="F" x="450" y ="0"/>
-    <joint name="G" x="300" y ="0"/>
-    <joint name="H" x="150" y ="0"/>
+    <joint name="A" x="0" y ="0">
+        <labelOffset x="-20" y="-20"/>
+        <load mag="0" ang="0" textXOff="0" textYOff="80"/>
+    </joint>
+    <joint name="B" x="150" y ="150">
+        <labelOffset x="-20" y="10"/>
+        <load mag="0" ang="0" textXOff="0" textYOff="-110"/>
+    </joint>
+    <joint name="C" x="300" y ="150">
+        <labelOffset x="-20" y="10"/>
+        <load mag="0" ang="0" textXOff="0" textYOff="-110"/>
+    </joint>
+    <joint name="D" x="450" y ="150">
+        <labelOffset x="-20" y="10"/>
+        <load mag="0" ang="0" textXOff="0" textYOff="-110"/>
+    </joint>
+    <joint name="E" x="600" y ="0">
+        <labelOffset x="-20" y="-20"/>
+        <load mag="0" ang="0" textXOff="0" textYOff="80"/>
+    </joint>
+    <joint name="F" x="450" y ="0">
+        <labelOffset x="-20" y="-20"/>
+        <load mag="0" ang="0" textXOff="0" textYOff="80"/>
+    </joint>
+    <joint name="G" x="300" y ="0">
+        <labelOffset x="-20" y="-20"/>
+        <load mag="100" ang="270" textXOff="0" textYOff="80"/>
+    </joint>
+    <joint name="H" x="150" y ="0">
+        <labelOffset x="-20" y="-20"/>
+        <load mag="100" ang="270" textXOff="0" textYOff="80"/>
+    </joint>
 </joints>
-
-<labelOffsets>
-    <offset name="A" x="-20" y ="-20" />
-    <offset name="B" x="-20" y ="10" />
-    <offset name="C" x="-20" y ="10" />
-    <offset name="D" x="-20" y ="10" />
-    <offset name="E" x="-20" y ="-20" />
-    <offset name="F" x="-20" y ="-20" />
-    <offset name="G" x="-20" y ="-20" />
-    <offset name="H" x="-20" y ="-20" />
-</labelOffsets>
 
 <members>
     <member name="AB" Joint1="A" Joint2="B"/>
@@ -61,17 +74,6 @@
     <member name="GD" Joint1="G" Joint2="D"/>
     <member name="DF" Joint1="F" Joint2="D"/>
 </members>
-
-<loads>
-    <load name="A" mag="0" ang="0" textXOff="0" textYOff="80"/>
-    <load name="B" mag="0" ang="0" textXOff="0" textYOff="-110"/>
-    <load name="C" mag="0" ang="0" textXOff="0" textYOff="-110"/>
-    <load name="D" mag="0" ang="0" textXOff="0" textYOff="-110"/>
-    <load name="E" mag="0" ang="0" textXOff="0" textYOff="80"/>
-    <load name="F" mag="0" ang="0" textXOff="0" textYOff="80"/>
-    <load name="G" mag="100" ang="270" textXOff="0" textYOff="80"/>
-    <load name="H" mag="100" ang="270" textXOff="0" textYOff="80"/>
-</loads>
 
 <reactions>
     <reaction name="A_x" value="1" textXOff="-60" textYOff="-10" align="leftBelow"/>
